@@ -1,1 +1,168 @@
-hello world
+
+student@H610H7-M2 MINGW64 ~ (main)
+$ git --version
+git version 2.52.0.windows.1
+
+student@H610H7-M2 MINGW64 ~ (main)
+$ cd d:
+
+student@H610H7-M2 MINGW64 /d
+$ ls
+'$RECYCLE.BIN'/   Pappu_1/   SEPM-27/  'System Volume Information'/   rootstock/
+
+student@H610H7-M2 MINGW64 /d
+$ cd SEPM-27
+
+student@H610H7-M2 MINGW64 /d/SEPM-27
+$ git init
+Initialized empty Git repository in D:/SEPM-27/.git/
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git config --global user.name "Vaishnavi_Kelkar"
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git config --global user.email "kelkarvaishu5252@gmail.com"
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git add .
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   text.txt
+
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git commit -m "My first commit."
+[main (root-commit) 3d53da4] My first commit.
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text.txt
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git log
+commit 3d53da4b858d70ded8582359b4e875781b8e45ee (HEAD -> main)
+Author: Vaishnavi_Kelkar <kelkarvaishu5252@gmail.com>
+Date:   Wed Jan 14 11:59:57 2026 +0530
+
+    My first commit.
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   text.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git clone https://github.com/kelkarVai/Hello_world.git
+Cloning into 'Hello_world'...
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (10/10), done.
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ ^C
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ ^C
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ cd test
+
+student@H610H7-M2 MINGW64 /d/SEPM-27/test (main)
+$ git init
+Initialized empty Git repository in D:/SEPM-27/test/.git/
+
+student@H610H7-M2 MINGW64 /d/SEPM-27/test (main)
+$ git remote add origin https://github.com/kelkarVai/test.git
+
+student@H610H7-M2 MINGW64 /d/SEPM-27/test (main)
+$ git remote -v
+origin  https://github.com/kelkarVai/test.git (fetch)
+origin  https://github.com/kelkarVai/test.git (push)
+
+student@H610H7-M2 MINGW64 /d/SEPM-27/test (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/kelkarVai/test.git'
+
+student@H610H7-M2 MINGW64 /d/SEPM-27/test (main)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/kelkarVai/test.git'
+
+student@H610H7-M2 MINGW64 /d/SEPM-27/test (main)
+$ cd ..
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ ls
+Hello_world/  test/  text.txt
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git init
+Reinitialized existing Git repository in D:/SEPM-27/.git/
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git remote add origin https://github.com/kelkarVai/test.git
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git remote -v
+origin  https://github.com/kelkarVai/test.git (fetch)
+origin  https://github.com/kelkarVai/test.git (push)
+
+student@H610H7-M2 MINGW64 /d/SEPM-27 (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 238 bytes | 238.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/kelkarVai/test.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
